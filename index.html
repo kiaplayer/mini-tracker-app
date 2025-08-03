@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiniTracker - GPS Track Recording App</title>
+    <meta name="description" content="Simple and convenient GPS track recording app for iOS. Create routes, track journeys, and save them in GPX format.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1 data-en="MiniTracker" data-ru="MiniTracker">MiniTracker</h1>
+                </div>
+                <nav class="nav">
+                    <div class="language-switcher">
+                        <button class="lang-btn active" data-lang="en">EN</button>
+                        <button class="lang-btn" data-lang="ru">RU</button>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main id="main-content">
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title" data-en="GPS Track Recording Made Simple" data-ru="Запись GPS-треков стала проще">
+                            GPS Track Recording Made Simple
+                        </h1>
+                        <p class="hero-description" data-en="Create routes, track your journeys, and save them in the standard GPX format. Your reliable companion for recording all your adventures." data-ru="Создавайте маршруты, отслеживайте свои путешествия и сохраняйте их в стандартном формате GPX. Ваш надежный спутник для записи всех ваших приключений.">
+                            Create routes, track your journeys, and save them in the standard GPX format. Your reliable companion for recording all your adventures.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#" class="btn btn-primary" data-en="Download on App Store" data-ru="Скачать в App Store">
+                                Download on App Store
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hero-screenshots">
+                        <div class="screenshot-container">
+                            <img src="Screenshot_light.png" alt="MiniTracker Light Theme" class="screenshot light-theme">
+                            <img src="Screenshot_dark.png" alt="MiniTracker Dark Theme" class="screenshot dark-theme">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title" data-en="Main Features" data-ru="Основные возможности">
+                Main Features
+            </h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📍</div>
+                    <h3 data-en="GPS Track Recording" data-ru="Запись GPS-треков">GPS Track Recording</h3>
+                    <ul>
+                        <li data-en="Simple one-tap route recording" data-ru="Простая запись маршрутов одним нажатием">Simple one-tap route recording</li>
+                        <li data-en="Real-time tracking on the map" data-ru="Отслеживание в реальном времени на карте">Real-time tracking on the map</li>
+                        <li data-en="Ability to continue interrupted tracks" data-ru="Возможность продолжения прерванного трека">Ability to continue interrupted tracks</li>
+                        <li data-en="Background operation" data-ru="Работа в фоновом режиме">Background operation</li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🗺️</div>
+                    <h3 data-en="Maps" data-ru="Карты">Maps</h3>
+                    <ul>
+                        <li data-en="Google Maps support" data-ru="Поддержка Google Maps">Google Maps support</li>
+                        <li data-en="Switch between standard and hybrid modes" data-ru="Переключение между стандартным и гибридным режимами">Switch between standard and hybrid modes</li>
+                        <li data-en="Display current track on the map" data-ru="Отображение текущего трека на карте">Display current track on the map</li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3 data-en="Track Statistics" data-ru="Статистика треков">Track Statistics</h3>
+                    <ul>
+                        <li data-en="Total route distance" data-ru="Общее расстояние маршрута">Total route distance</li>
+                        <li data-en="Travel time" data-ru="Время в пути">Travel time</li>
+                        <li data-en="Maximum and average speed" data-ru="Максимальная и средняя скорость">Maximum and average speed</li>
+                        <li data-en="Current speed" data-ru="Текущая скорость">Current speed</li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📁</div>
+                    <h3 data-en="File Management" data-ru="Управление файлами">File Management</h3>
+                    <ul>
+                        <li data-en="Import GPX files from other applications" data-ru="Импорт GPX файлов из других приложений">Import GPX files from other applications</li>
+                        <li data-en="Export tracks in GPX format" data-ru="Экспорт треков в формате GPX">Export tracks in GPX format</li>
+                        <li data-en="Rename and delete tracks" data-ru="Переименование и удаление треков">Rename and delete tracks</li>
+                        <li data-en="Sort by name or date" data-ru="Сортировка по имени или дате">Sort by name or date</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Perfect For Section -->
+    <section class="perfect-for">
+        <div class="container">
+            <h2 class="section-title" data-en="Perfect For" data-ru="Идеально подходит для">
+                Perfect For
+            </h2>
+            <div class="activities-grid">
+                <div class="activity-item">
+                    <div class="activity-icon">🥾</div>
+                    <span data-en="Hiking and trekking" data-ru="Пешие прогулки и походы">Hiking and trekking</span>
+                </div>
+                <div class="activity-item">
+                    <div class="activity-icon">🚴</div>
+                    <span data-en="Cycling routes" data-ru="Велосипедные маршруты">Cycling routes</span>
+                </div>
+                <div class="activity-item">
+                    <div class="activity-icon">🏃</div>
+                    <span data-en="Running and training" data-ru="Пробежки и тренировки">Running and training</span>
+                </div>
+                <div class="activity-item">
+                    <div class="activity-icon">✈️</div>
+                    <span data-en="Travel and sightseeing" data-ru="Путешествия и экскурсии">Travel and sightseeing</span>
+                </div>
+                <div class="activity-item">
+                    <div class="activity-icon">🌲</div>
+                    <span data-en="Any outdoor activities" data-ru="Любые активности на открытом воздухе">Any outdoor activities</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Requirements Section -->
+    <section class="requirements">
+        <div class="container">
+            <h2 class="section-title" data-en="Technical Requirements" data-ru="Технические требования">
+                Technical Requirements
+            </h2>
+            <div class="requirements-list">
+                <div class="requirement-item">
+                    <div class="requirement-icon">📱</div>
+                    <span data-en="iOS 17.0 or newer" data-ru="iOS 17.0 или новее">iOS 17.0 or newer</span>
+                </div>
+                <div class="requirement-item">
+                    <div class="requirement-icon">🍎</div>
+                    <span data-en="iPhone, iPad" data-ru="iPhone, iPad">iPhone, iPad</span>
+                </div>
+                <div class="requirement-item">
+                    <div class="requirement-icon">📍</div>
+                    <span data-en="Location access required" data-ru="Доступ к геолокации">Location access required</span>
+                </div>
+            </div>
+            <div class="note">
+                <p data-en="Note: The app requires location permission to record tracks." data-ru="Примечание: Для работы приложения требуется разрешение на использование геолокации для записи треков.">
+                    Note: The app requires location permission to record tracks.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 data-en="Start Your Adventure Today" data-ru="Начните свое приключение сегодня">
+                    Start Your Adventure Today
+                </h2>
+                <p data-en="Download MiniTracker and start recording your GPS tracks with ease." data-ru="Скачайте MiniTracker и начните легко записывать свои GPS-треки.">
+                    Download MiniTracker and start recording your GPS tracks with ease.
+                </p>
+                <a href="#" class="btn btn-primary btn-large" data-en="Download on App Store" data-ru="Скачать в App Store">
+                    Download on App Store
+                </a>
+            </div>
+        </div>
+    </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-links">
+                        <a href="privacy-en.html" data-en="Privacy Policy" data-ru="Политика конфиденциальности" class="privacy-link">Privacy Policy</a>
+                    </div>
+                    <p>&copy; 2025 MiniTracker. <span data-en="All rights reserved." data-ru="Все права защищены.">All rights reserved.</span></p>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html> 
