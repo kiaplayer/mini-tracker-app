@@ -112,6 +112,17 @@ class LanguageManager {
             const href = this.currentLang === 'ru' ? 'privacy-ru.html' : 'privacy-en.html';
             privacyLink.href = href;
         }
+
+        // Update App Store links
+        const appStoreLinks = document.querySelectorAll('.app-store-link');
+        appStoreLinks.forEach(link => {
+            const url = this.currentLang === 'ru' 
+                ? link.getAttribute('data-ru-url') 
+                : link.getAttribute('data-en-url');
+            if (url) {
+                link.href = url;
+            }
+        });
     }
 }
 
