@@ -221,8 +221,6 @@ p {
     transition: var(--transition);
 }
 
-
-
 .light-theme {
     position: relative;
     z-index: 2;
